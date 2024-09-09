@@ -1,4 +1,4 @@
-import { BirdSvg } from "@/components/ui/bird_svg";
+import { BirdSvg } from "../../../public/bird_svg";
 import { LoginForm } from "@/components/ui/login_form";
 import { API_URL } from "@/utils/constants";
 import { cookies } from "next/headers";

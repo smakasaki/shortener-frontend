@@ -1,4 +1,4 @@
-import { BirdSvg } from "@/components/ui/bird_svg";
+import { BirdSvg } from "../../public/bird_svg";
 import { Button } from "@/components/ui/button";
 import UrlForm from "@/components/ui/url_form";
 import { API_URL } from "@/utils/constants";

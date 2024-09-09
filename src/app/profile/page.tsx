@@ -1,4 +1,4 @@
-import { BirdSvg } from "@/components/ui/bird_svg";
+import { BirdSvg } from "../../../public/bird_svg";
 import LogoutButton from "@/components/ui/logout_button";
 import { API_URL } from "@/utils/constants";
 import { cookies } from "next/headers";
@@ -38,7 +38,6 @@ export default async function Profile() {
             credentials: "include",
         });
         const urls = await del.json(); // Получаем JSON
-        console.log(urls);
 
         return (
             <div className="w-screen min-h-screen flex flex-col justify-between items-center px-4">
@@ -67,7 +66,7 @@ export default async function Profile() {
                             </TableRow>
                         </TableHeader>
                         <TableBody>
-                            {urls.map(
+                            {urls?.map(
                                 (url: {
                                     id: number;
                                     originalURL: string;
