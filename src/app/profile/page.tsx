@@ -81,7 +81,7 @@ export default async function Profile() {
                                                 href={url.originalURL}
                                                 className="text-blue-500"
                                             >
-                                                {url.originalURL}
+                                                {`${window.location.origin}/s/${url.originalURL}`}
                                             </a>
                                         </TableCell>
                                         <TableCell>{url.shortCode}</TableCell>
