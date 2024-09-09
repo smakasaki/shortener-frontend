@@ -81,10 +81,10 @@ export default async function Profile() {
                                                 href={url.originalURL}
                                                 className="text-blue-500"
                                             >
-                                                {`${window.location.origin}/s/${url.originalURL}`}
+                                                {url.originalURL}
                                             </a>
                                         </TableCell>
-                                        <TableCell>{url.shortCode}</TableCell>
+                                        <TableCell>{`http://35.246.174.127/s/${url.shortCode}`}</TableCell>
                                         <TableCell>{url.clickCount}</TableCell>
                                         <TableCell>
                                             {new Date(
