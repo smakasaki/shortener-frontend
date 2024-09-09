@@ -84,7 +84,7 @@ export default async function Profile() {
                                                 {url.originalURL}
                                             </a>
                                         </TableCell>
-                                        <TableCell>{`http://35.246.174.127/s/${url.shortCode}`}</TableCell>
+                                        <TableCell><a href={`http://35.246.174.127/s/${url.shortCode}`}>{`http://35.246.174.127/s/${url.shortCode}`}</a></TableCell>
                                         <TableCell>{url.clickCount}</TableCell>
                                         <TableCell>
                                             {new Date(
