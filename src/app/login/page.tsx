@@ -4,6 +4,10 @@ import { API_URL } from "@/utils/constants";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
+export const metadata = {
+    title: "Sign In - URL Shortener",
+};
+
 export default async function Login() {
     const cookieStore = cookies();
     const sessionCookie = cookieStore.get("sessionID");

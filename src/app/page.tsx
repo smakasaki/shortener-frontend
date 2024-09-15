@@ -5,6 +5,10 @@ import { API_URL } from "@/utils/constants";
 import LogoutButton from "../components/ui/logout_button";
 import { cookies } from "next/headers";
 
+export const metadata = {
+    title: "URL Shortener",
+};
+
 export default async function Home() {
     const cookieStore = cookies(); // Извлекаем куки на сервере
     const sessionCookie = cookieStore.get("sessionID"); // Получаем нужную куку
