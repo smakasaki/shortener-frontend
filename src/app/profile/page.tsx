@@ -83,7 +83,7 @@ export default async function Profile() {
                                                 href={url.originalURL}
                                                 className="text-blue-500"
                                             >
-                                                {url.originalURL}
+                                                {shortenURL(url.originalURL)}
                                             </a>
                                         </TableCell>
                                         <TableCell>
@@ -110,4 +110,11 @@ export default async function Profile() {
     } else {
         redirect("/login");
     }
+}
+
+function shortenURL(url: string, maxLength = 20) {
+    if (url.length > maxLength) {
+        return url.substring(0, maxLength) + "...";
+    }
+    return url;
 }
