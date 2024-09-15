@@ -62,7 +62,6 @@ export default async function Profile() {
                         <TableCaption>A list of shortened URLs.</TableCaption>
                         <TableHeader>
                             <TableRow>
-                                <TableHead>ID</TableHead>
                                 <TableHead>Original URL</TableHead>
                                 <TableHead>Short Code</TableHead>
                                 <TableHead>Clicks</TableHead>
